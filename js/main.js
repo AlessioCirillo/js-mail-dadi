@@ -22,3 +22,31 @@ if (userFound == true) {
     console.log('Email errata');
 }
 
+
+
+//GIOCO NUMERI
+
+//nuemro utente
+var utente = Math.floor(Math.random() * 6) +1; 
+document. getElementById ('numero-utente').innerHTML = 'numero utente: ' + utente;
+console.log( 'utente', utente);
+
+//numero pc
+var computer = Math.floor(Math.random() * 6) +1; 
+document. getElementById ('numero-computer').innerHTML = 'numero computer: ' + computer;
+console.log( 'computer', computer);
+
+
+
+if (utente > computer){
+    document. getElementById ('risultato').innerHTML = 'utente vince';
+    console.log('utente vince');
+
+} else if (computer > utente){
+    document. getElementById ('risultato').innerHTML = 'computer vince';
+    console.log('computer vince');
+
+} else{
+    document. getElementById ('risultato').innerHTML = 'non vince nessuno';
+    console.log('pari e patta');
+}
